@@ -11,35 +11,34 @@
     <body>
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12 text-center">
                     <h1>Tic Tac Toe</h1>
                 </div>
             </div>
             <hr class="linea">
             <div class="row">
                 <div class="col-md-3">
-                    <table>
-                        <tr>
-                            <td class="box box1"></td>
-                            <td class="box box2"></td>
-                            <td class="box box3"></td>
-                        </tr>
-                        <tr>
-                            <td class="box box4"></td>
-                            <td class="box box5"></td>
-                            <td class="box box6"></td>
-                        </tr>
-                        <tr>
-                            <td class="box box7"></td>
-                            <td class="box box8"></td>
-                            <td class="box box9"></td>
-                        </tr>
-                    </table>
+                    <div class="row text-center">
+                        <input class="box" id="box0" value="+"></input>
+                        <input class="box" id="box1" value="+"></input>
+                        <input class="box" id="box2" value="+"></input>
+                    </div>
+                    <div class="row text-center">
+                        <input class="box" id="box3" value="+"></input>
+                        <input class="box" id="box4" value="+"></input>
+                        <input class="box" id="box5" value="+"></input>
+                    </div>
+                    <div class="row text-center">
+                        <input class="box" id="box6" value="+"></input>
+                        <input class="box" id="box7" value="+"></input>
+                        <input class="box" id="box8" value="+"></input>
+                        
+                    </div>
                 </div>
                 <div class="col-md-3 text-center">
                     <div class="alertas">
                     </div>
-                    <button class="btn btn-primary">Juego Nuevo</button>
+                    <button class="btn btn-primary" onclick="reiniciarJuego()">Juego Nuevo</button>
                 </div>
             </div>
         </div>
